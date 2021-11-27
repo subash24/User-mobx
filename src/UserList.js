@@ -1,6 +1,8 @@
 import React from "react";
 import { useUserContext } from "./UserContext";
 import { Observer } from "mobx-react";
+
+
 export const UserList = () => {
   const userStore = useUserContext();
   return (
@@ -8,9 +10,9 @@ export const UserList = () => {
       {() =>(
             <div>
             <ul>
-              {userStore.users.map((user) => (
-                <li key={user.cell}>{user.gender}</li>
-              ))}
+              {(userStore.users.length !== 0) ? userStore.users.map((user) => (
+                <li key={user.email}>{`${user.name.title} ${user.name.first} ${user.name.last}`}</li>
+              )):<h5>No Users</h5>}
             </ul>
           </div>
       )}

@@ -5,7 +5,7 @@
 export const createUserStore = ()=>{
     return {
         text:"User List",
-        users : [{gender:"male"}],
+        users : [],
 
         addUser(user){
             this.users.push(user);
