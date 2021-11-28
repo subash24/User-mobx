@@ -1,10 +1,13 @@
-import App from "../src/App";
-import { UserProvider } from "../src/UserContext";
+import App from "../src/components/App";
+import { StoreProvider } from "../src/context/StoreContext";
 
-export default function Home() {
+const index = () => {
   return (
-    <UserProvider>
-    <App/>
-    </UserProvider>
+    <StoreProvider>
+     <App/>
+     </StoreProvider>
   )
 }
+
+export default index
+

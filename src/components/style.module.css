@@ -1,0 +1,65 @@
+.container {
+    padding: 0 2rem;
+    margin: 0 auto;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .btn
+  {
+    width: 80px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loading
+  {
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    border: 0.25rem solid rgba(0, 0, 0, 0.856);
+    border-top-color: rgba(136, 136, 136, 0.808);
+    -webkit-animation: spin 1s infinite linear;
+            animation: spin 1s infinite linear;
+  }
+
+  .card
+  {
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: space-between;
+    width: 240px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.233);
+
+  }
+  .grid
+  {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 40px;
+  }
+ .del
+  {
+    padding: 10px 15px;
+    height: fit-content;
+  }
+
+  .image
+  {
+    object-fit: cover;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+
+  .title
+  {
+    margin-left: 30px;
+  }
